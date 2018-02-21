@@ -14,5 +14,5 @@ libgsteflvideosink.so: $(OBJ)
 	$(CC) -shared -o $@ $^ $(LDFLAGS)
 
 clean:
-	rm *.o libgstefvideosink.so
+	rm *.o libgsteflvideosink.so
 	
