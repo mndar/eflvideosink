@@ -18,7 +18,7 @@ enum {
   PROP_LAST
 };
 
-#define _do_init GST_DEBUG_CATEGORY_INIT(efl_video_sink_debug, "efl_video_sink", 0, "efl video sink")
+#define _do_init GST_DEBUG_CATEGORY_INIT(efl_video_sink_debug, "eflvideosink", 0, "efl video sink")
 #define parent_class efl_video_sink_parent_class
 G_DEFINE_TYPE_WITH_CODE (EflVideoSink, efl_video_sink, GST_TYPE_VIDEO_SINK, _do_init);
 
@@ -402,7 +402,7 @@ plugin_init (GstPlugin * plugin)
 
 GST_PLUGIN_DEFINE (GST_VERSION_MAJOR,
     GST_VERSION_MINOR,
-    efl_video_sink,
+    eflvideosink,
     "Efl Video Sink",
     plugin_init, VERSION, "LGPL", PACKAGE_NAME, GST_PACKAGE_ORIGIN)
     
